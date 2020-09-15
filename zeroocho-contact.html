@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+    user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <title>Zeroocho About</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,700&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;1,600;1,800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/547b2fb77f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="stylesabout.css">
+  </head>
+
+<body>
+       <div class="redes-container">
+        <ul>
+          <li> <a href="https://soundcloud.com/zero8records" class="soundcloud" target="_blank"><i class="fab fa-soundcloud"></i></a></li>
+          <li> <a href="https://www.facebook.com/zeroochorecords/" class="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+          <li> <a href="https://www.instagram.com/zeroochorecords/" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li> <a href="#" class="bandcamp" target="_blank"><i class="fab fa-bandcamp"></i></a></li>
+        </ul>
+      </div>
+
+ <main>
+    <div class="btn">
+       <span class="fas fa-bars"></span>
+     </div>
+       <nav class="sidebar">
+         <ul>
+           <li><a href="index.html">Home</a></li>
+           <li><a href="zeroocho-about.html">About</a></li>
+           <li><a href="https://www.beatport.com/label/zeroocho-records/30750" target="_blank">Releases</a></li>
+           <li><a href="zeroocho-artists.html">Artists</a></li>
+           <li><a href="zeroocho-events.html">Events</a></li>
+          </ul>
+       </nav>
+
+  <div>
+    <h1>Contact Us:</h1>
+  </div>
+
+  <div>
+    <p>For any inquiry, demo or promo, please contact us through any of our social networks.
+    </p>
+  </div>
+
+  <div class="background-subpages">
+    <img src="./images/foto-oscar.png" alt="foto silos">
+  </div>
+
+ </main>
+
+<footer id="main-footer" class="footer">
+  <div>
+  <a href="#top">Back to top &raquo;</a>
+ </div>
+<div class="redes-container footer">
+  <ul>
+    <li> <a href="https://soundcloud.com/zero8records" class="soundcloud" target="_blank"><i class="fab fa-soundcloud"></i></a></li>
+    <li> <a href="https://www.facebook.com/zeroochorecords/" class="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+    <li> <a href="https://www.instagram.com/zeroochorecords/" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a></li>
+    <li> <a href="#" class="bandcamp" target="_blank"><i class="fab fa-bandcamp"></i></a></li>
+  </ul>
+</div>
+<div>
+<p>All rights reserved to Zeroocho Records &copy;2020</p>
+</div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="jquery/z8r-jquery.js"></script>
+<script>
+  $('.btn').click(function(){
+    $(this).toggleClass("click");
+    $('.sidebar').toggleClass("show");
+  });
+  $('.social-btn').click(function(){
+    $('nav ul .social-show').toggleClass("show");
+    $('nav ul .icono.derecha').toggleClass("rotate");
+  });
+  $('nav ul li').click(function(){
+    $(this).addClass('active').siblings().removeClass("active");
+  });
+</script>
+</body>
+</html>
