@@ -470,6 +470,9 @@ border-left: rgba(0, 230, 0, .7) solid 5px;
     max-height: 380px;
     padding: 50px 25px 0;
   }
+  .imagenes-portadaweb {
+    height: 736px;
+  }
   .title {
     font-size: 1.3rem;
   }
@@ -477,14 +480,30 @@ border-left: rgba(0, 230, 0, .7) solid 5px;
     font-size: 5rem;
     line-height: 1.1;
   }
+  .latest-release {
+    padding-top: 5px;
+  }
+  .latest-release a {
+  font-size: .7rem;
+  line-height: 1.1;
+  }
   .latest-release
   .premieres-group {
     float: none;
     width: 100%;
   }
   .premieres-group {
-    margin-top: 700px;
+    margin-top: 400px;
+    padding-left: 10%;
+    margin-right: 0;
   }
+.container-secondary {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
 .secondary-content {
 width: 100%;
 }
