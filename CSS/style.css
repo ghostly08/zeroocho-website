@@ -1,0 +1,678 @@
+/* Type Selectors -------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 2em; /* 26px/16px */
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  background-color: #333;
+  width: 60%;
+  position: relative;
+  top: 370px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  /*margin: .7em 0 .3em;*/
+  margin-bottom: .5em;
+  text-shadow: 0 3px 4px rgba(0,0,0, .3);
+  border-radius: 4px;
+  box-shadow: 0 7px 7px rgba(0,0,0, .5);
+}
+
+.title:hover {
+  color: rgba(200, 250, 0, 1);
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-size: 1.4em; /* 53px/16px  */
+  font-weight: 400;
+  line-height: 1.1;
+  margin: .7em 0 .1em; /* 0 0 26px */
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-size: 2em; /* 53px/16px  */
+  font-weight: 400;
+  line-height: 1.1;
+  margin: .1em 0 .9em;
+}
+
+h4 {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: #333;
+  font-size: 1.3em; /* 53px/16px  */
+  font-weight: 400;
+  line-height: 1.4;
+  text-shadow: 0 3px 4px rgba(0,0,0, .3);
+  margin-left: 2.5em;
+  margin-right: 2.5em;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 100;
+  line-height: 1.7;
+  text-shadow: 0 3px 4px rgba(0,0,0, .2);
+}
+
+/* Pseudo-classes ------------------ */
+
+a:link {
+  /*color: rgb(255, 169, 73);*/
+  text-decoration: none;
+}
+
+a:visited {
+  display: none;/*mirar como quitar el marca de visited*/
+}
+
+a:hover {
+  color: rgba(255, 169, 73, .4);
+}
+
+a:active {
+  color: rgb(255, 169, 73);
+}
+
+/* Main Styles --------------------- */
+
+.main-header {
+position: absolute;
+padding-top: 70px;
+padding-bottom: 30px;/*Al bajar el p. bottom he conseguido subir los icons de social*/
+height: 30px;
+width: 100%;
+background: url('images/logo-z81.png') no-repeat left / 16%;
+background-position: 5%;
+}
+
+/* -------------------------------
+       Redes Container
+-------------------------------- */
+
+.redes-container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 70px; /*baja el botón de menu*/
+  right: 0;
+  padding-top: 0;
+  margin-right: 10px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  justify-content: flex-end;
+  /*-moz-justify-content: flex-end;
+  -o-justify-content: flex-end;*/
+}
+
+.redes-container ul li {
+display: block;
+margin: 0 2px;
+width: 40px;
+height: 40px;
+text-align: center; /*para alinear el elemento "a"*/
+}
+
+.redes-container ul li a {
+  display: block;
+  padding: 0 3px;
+  color: #222;
+  line-height: 35px;/*pq l height es 50px. de esta manera el icono queda centrado*/
+  font-size: 18px;/*tamaño de los logos*/
+  border-radius: 3px;
+  transition: .2s;
+  text-shadow: 0 7px 7px rgba(0,0,0, .2);
+}
+
+.redes-container ul li a:hover {
+  transform: translateY(-3px) scale(1.05);
+  background-color: rgba(200, 250, 0, 1);
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .4);
+}
+
+/* ---------------------------
+         Sidebar
+---------------------------- */
+
+.btn {/*parametros boton menu*/
+  position: fixed;
+  top: 70px; /*baja el botón de menu*/
+  left: 25px; /*lo cerca que está del margén left*/
+  height: 33px;/*altura del controno del botón*/
+  padding: 4px 5px 0 5px;*//*parametro de contorno del boton*/
+  border-radius: 3px; /*redondear esquinas del botón*/
+  cursor: pointer;
+  transition: left 0.4s ease;
+}
+
+.btn.click {/*desplazamiento del bottom de sidebar*/
+  left: 410px;
+  z-index: 1;
+}
+
+.btn span {/*parametros del boton barras del menú*/
+  color: #222;
+  font-size: 24px;
+}
+
+.btn.click span:before; {/*desplegar menu*/
+  content: '\f00d';
+}
+
+.sidebar {
+  position: fixed;
+  top: 0px;/*para bajar el contenedor menu*/
+  padding-top: 100px;
+  width: 390px;
+  height: 100%;
+  left: -450px;
+  background: #fff;
+  transition: left 0.4s ease;
+  z-index: 1;
+  }
+
+  .sidebar.show{
+    left: 0px;
+ }
+
+  nav ul {
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  list-style: none; /*da formato de lista*/
+  }
+
+  nav ul li {
+  text-align: center;
+  line-height: 80px;
+  /*margin-left: 20px;
+  margin-bottom: 10px;*/
+  list-style: none;
+  }
+
+  nav ul li a {/*actuando sobre todos los navegadores, ojo!!!*/
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: #fff;
+  background-color: #444;
+  font-size: 2.5em;/*tamaño letras menu*/
+  letter-spacing: 1.5px;
+  padding: 0 5px;
+  bottom: 35px;
+  }
+
+  .sidebar a:hover {
+    color: rgba(200, 250, 0, 1);
+  }
+
+ /*--------------------------
+           Layouts
+ --------------------------- */
+
+.imagenes-portadaweb {
+  background: url('../images/silos-horizontal.png') no-repeat center;
+background-size: cover; /*Adapta la imagen al tamaño del monitor*/
+padding-bottom: 650px;
+}
+
+.about {
+  margin: 2em 2.5em;
+}
+
+.hightlights-titol {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  text-align: center;
+  width: 20%;
+  background: #333;
+  padding: 3px;
+  margin-top: 2.5em;
+  margin-left:  auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  border-top-right-radius: 5px;
+}
+
+.line-about {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+  border-top: #333 solid 2px;
+}
+
+.artwork-container h4 {
+  margin-bottom: .1em;
+}
+.text-wrapper {
+  margin: 0 2.5em;
+}
+
+/*.flechita {
+  color: #333;
+  padding-left: 50%;
+  font-size: 40px;
+  font-weight: 100;
+  padding-bottom: 30px;
+}*/
+
+.artwork-container img {
+  width: 100%;
+}
+
+.release-name h2 {
+  color: #333;
+  text-align: center;
+  font-size: 4em;
+  margin-top: 50px;
+  text-shadow: 0 3px 4px rgba(0,0,0, .1);
+}
+
+/* -------------------------
+    Premieres Layouts
+--------------------------- */
+
+.premieres-container {
+  margin: 3.3em;
+  border-radius: 5px;
+}
+
+.header-premieres {
+  box-shadow: 0 7px 7px rgba(0,0,0, .3);
+}
+
+.header-premieres h3 {
+  font-size: 1.3em;
+  text-align: left;
+  color: #fff;
+  padding: .4em;
+  margin-top: 2em;
+  margin: 0 0;/* Ojo!! afecta al tamaño de la caja del titulo. chequear luego */
+  background-color: #333;
+  border-radius: 5px
+}
+
+.premieres-items {
+  font-size: .5em;
+}
+
+.premieres-items ul {
+  padding-bottom: .3em;
+
+}
+
+.premieres-items ul li a {
+display: flex;
+font-family: "Roboto", sans-serif;
+color: #fff;
+background: #ffff;
+font-weight: 600;
+text-align: left;
+padding-top: 10px;
+padding-bottom: 10px;
+margin-bottom: 10px;
+border-left: rgba(200, 250, 0, 1) solid 5px;
+border-radius: 4px;
+box-shadow: 0 7px 7px rgba(0,0,0, .3);
+}
+
+.premieres-items a:hover {
+  background: rgba(200, 250, 0, 1);
+}
+
+/* ----------------------------
+    Secondary content Layout
+---------------------------- */
+
+.line-titol {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  background: #333;
+  padding: 3px;
+  margin-top: 2.5em;
+  margin-left:  auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  border-top-right-radius: 5px;
+}
+.line-secondary-content {
+  width: 90%;
+  margin: 0  2em 2.5em;
+  border-bottom: #333 solid 2px;
+}
+
+.container-secondary {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 0;
+  }
+
+.secondary-content {
+  position: relative;
+  margin-bottom: -6.7em;
+}
+
+.secondary-content img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover; /*si la imagen no esta proporcionada, ayuda a q no se vea mal*/
+}
+
+.overlay {
+  position: absolute;
+  bottom: 30%;
+  left: 0;
+  background: rgba(50, 50, 50, .7)/*(0, 118, 192, 0.781)*/;
+  width: 100%;
+  height: 0;
+  overflow: hidden; /*para esconder el texto antes de desplegar*/
+  transition: .5s ease;
+}
+
+.overlay h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.6em;
+  position: absolute;
+  top: 40%;
+  left: 12%;
+  margin-right: 10%;
+  text-align: left;
+}
+
+.overlay h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: yellow;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 1.2em;
+  position: absolute;
+  top: 62%;
+  left: 12%;
+  margin-right: 10%;
+  text-align: left;
+}
+
+.overlay p {
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+  line-height: 1;
+  color: #fff;
+  font-size: 1.1em;
+  position: absolute;
+  top: 73%;
+  left: 12%;
+  right: 10%;
+}
+
+.overlay p:hover {
+  color: cyan;
+}
+
+.secondary-content:hover .overlay {
+  height: 70%;
+  cursor: pointer;
+}
+
+.imagen:hover {
+  transform: translateY(3px) scale(1.05);
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .4);
+}
+
+/*--------------------------
+      Footer Section
+----------------------------*/
+
+.footer {
+ color: #fff;
+ background-color: #333;
+ padding-top: 30px;
+ padding-bottom: 30px;
+ }
+
+.footer p {
+   text-align: center;
+   color: #fff;
+   padding-bottom: 30px;
+   padding-top: 0px
+   }
+
+ .footer a {
+   color: yellow;
+   padding-left: 25px;
+ }
+
+/* ----------------------------
+       Media Queries
+ ---------------------------- */
+
+@media (min-width: 735px) {
+ .container-primary,
+ .container-secondary {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+
+ .title {
+   font-size: 1.6em;
+ }
+
+.about,
+.container-primary,
+.container-secondary {
+   width: 85%;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+.release-name h4,
+ .text-wrapper,
+ .about p {
+  text-align: left;
+}
+
+.artwork-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  background-color: #333;
+  border-radius: 5px;
+  box-shadow: 0 7px 7px rgba(0,0,0, .9);
+}
+ .artwork-container img {
+   width: 40%;
+   padding-left: 1.5em;
+   flex-grow: 1;
+ }
+ .artwork-container h2 {
+   font-size: 3.5em;
+   width: 40%;
+   padding-left: .1em;
+  }
+
+  .artwork-container h3 {
+    font-size: 1.8em;
+    padding-left: .1em;
+    width: 40%;
+  }
+
+  .artwork-container img,
+  .release-name, h4 {
+    margin: .6em .1em;
+  }
+
+  .artwork-container h4 {
+    font-size: 1.1em;
+    text-align: justify;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  .release-name h2, h3, h4 {
+    color: #fff;
+  }
+
+  .premieres-container {
+    width: 85%;
+    margin: 2.5em .5em 0;
+  }
+
+ .secondary-content {
+   width: 47%;
+   margin: 0 .3em -2em;
+ }
+
+ .secondary-content img {
+   width: 100%;
+   height: 80%;
+   object-fit: cover; /*si la imagen no esta proporcionada, ayuda a q no se vea mal*/
+ }
+
+ .secondary-content h2 {
+   font-size: 1.2em;
+ }
+
+ .secondary-content h3 {
+   font-size: 1em;
+ }
+
+ .secondary-content p {
+   font-size: .8em;
+ }
+
+ .overlay {
+   bottom: 20%;
+ }
+
+ .secondary-content:hover .overlay {
+   height: 80%;
+ }
+}
+
+/*@media (min-width: 900px) {
+  .about,
+  .container-primary,
+  .container-secondary {
+    width: 100%;
+    margin-left: 4em;
+  }
+}*/
+
+@media (min-width: 1025px) {
+
+  .title {
+    font-size: 2.5em;
+  }
+
+  .about {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about p {
+    text-align: left;
+    margin-top: 2.5em;
+    margin-bottom: 3em;
+    font-size: 1.2em;
+    font-weight: 400;
+  }
+
+  .container-primary,
+  .container-secondary {
+     width: 85%;
+     margin-left: auto;
+     margin-right: auto;
+   }
+
+   .container-primary {
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: row;
+     align-items: flex-start;
+   }
+
+  .artwork-container {
+     width: 60%;
+   }
+
+   /*.release-name h2, h3, h4 {
+     color: #fff;
+   }*/
+
+   /*.artwork-container img,
+   h2, h3 {
+     padding: 1em;
+     background-color: #333;
+   }*/
+
+   .text-wrapper {
+     width: 100%;
+     text-align: left;
+   }
+
+   .premieres-container {
+     width: 35%;
+     height: 280px;
+     margin-top: 0;
+
+     /*border-bottom: dashed #555 3px;*/
+   }
+
+   .premieres-items {
+
+   }
+
+   .premieres-items a {
+     font-size: 2em;
+   }
+
+   .artwork-container {
+     order: -1;
+   }
+
+   .text-wrapper {
+     order: 1;
+   }
+
+/*.release-name {
+   height: 30px;
+  }
+
+.release-name h4 {
+  width: 30%;
+
+}*/
+
+  /*.premieres-container {
+    width: 40%;
+    float: right;
+  }*/
+  .secondary-content {
+    width: 30%;
+  }
+}
