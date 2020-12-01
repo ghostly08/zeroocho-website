@@ -15,8 +15,9 @@ $(document).ready(function(){
 });
 
 $('.menu li ul li a').click(function(){
-  window.location.href = $(this).attr("href"); 
+  window.location.href = $(this).attr("href");
 });
+
 /*
 $('.btn-menu').click(function(){
   $('.contenedor-menu .menu').slideToggle();
