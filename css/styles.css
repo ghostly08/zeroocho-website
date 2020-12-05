@@ -92,18 +92,19 @@ a:active {
 /* Main Styles --------------------- */
 
 .main-header {
-position: absolute;
-padding-top: 70px;
-padding-bottom: 30px;/*Al bajar el p. bottom he conseguido subir los icons de social*/
-height: 30px;
-width: 100%;
-background: url('images/logo-z81.png') no-repeat left / 16%;
-background-position: 5%;
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  padding-top: 70px;
+  padding-bottom: 30px;/*Al bajar el p. bottom he conseguido subir los icons de social*/
+  background: url('../images/logo-z81.png') no-repeat left / 16%;
+  background-position: 5%;
 }
 
 .imagenes-portadaweb {
 background: url('../images/adrienguh-unsplash.jpg') no-repeat center;
 background-size: cover; /*Adapta la imagen al tamaño del monitor*/
+margin-top: 45px;
 padding-bottom: 350px;
 }
 
@@ -122,8 +123,6 @@ padding-bottom: 350px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   justify-content: flex-end;
-  /*-moz-justify-content: flex-end;
-  -o-justify-content: flex-end;*/
 }
 
 .redes-container ul li {
@@ -157,7 +156,7 @@ text-align: center; /*para alinear el elemento "a"*/
 
 .btn {/*parametros boton menu*/
   position: fixed;
-  top: 70px; /*baja el botón de menu*/
+  top: 12px; /*baja el botón de menu*/
   left: 25px; /*lo cerca que está del margén left*/
   height: 33px;/*altura del controno del botón*/
   padding: 4px 5px 0 5px;*//*parametro de contorno del boton*/
@@ -172,7 +171,7 @@ text-align: center; /*para alinear el elemento "a"*/
 }
 
 .btn span {/*parametros del boton barras del menú*/
-  color: #111;
+  color: #222;
   font-size: 24px;
 }
 
@@ -248,10 +247,6 @@ text-align: center; /*para alinear el elemento "a"*/
   margin-bottom: 0;
   border-top-right-radius: 5px;
 }
-
-/*.container-primary {
-  border: solid red;
-}*/
 
 .line-about {
   width: 85%;
