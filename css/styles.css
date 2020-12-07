@@ -281,27 +281,9 @@ text-align: center; /*para alinear el elemento "a"*/
 
 .premieres-container {
   display: block;
-  /*order: -3;*/
-  /*width: 100%;*/
-  /*margin: 3.3em auto;*/
   padding-bottom: 25em;
   border-radius: 5px;
 }
-
-/*.header-premieres {
-  box-shadow: 0 7px 7px rgba(0,0,0, .3);
-}
-
-.header-premieres h3 {
-  font-size: 1.3em;
-  text-align: left;
-  color: #fff;
-  padding: .4em;
-  margin-top: 1em;
-  /*margin: 0 0;/* Ojo!! afecta al tamaño de la caja del titulo. chequear luego */
-  /*background-color: #333;
-  border-radius: 5px
-}*/
 
 /* ----- Slider ----- */
 
@@ -363,15 +345,15 @@ slide:nth-child(4) {
   background-position: center;
 }*/
 
-slide p {
+/*slide p {
   font-family: sans-serif;
   font-size: 70px;
   text-align: center;
-  display:
+  display: none;
   width: 100%;
   margin-top: 340px;
   color: #fff;
-}
+}*/
 
 @keyframes slide {
   0% { left: 100%; width: 100%;}
@@ -380,6 +362,54 @@ slide p {
   30% { left: -100%; width: 100%;}
   30.0001% { left: -100%; width: 0%;}
   100% { left: 100%; width: 0%;}
+}
+
+.overlay-slide {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(50, 50, 50, .7);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.overlay-slide h2 {
+font-family: 'Montserrat', sans-serif;
+color: #fff;
+font-style: italic;
+font-weight: 400;
+font-size: 1.9em;
+position: absolute;
+top: 45%;
+left: 12%;
+margin-right: 10%;
+text-align: left;
+}
+
+.overlay-slide h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: yellow;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 1.2em;
+  position: absolute;
+  top: 62%;
+  left: 12%;
+  margin-right: 10%;
+  text-align: left;
+}
+
+.overlay-slide p {
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+  line-height: 1;
+  color: #fff;
+  font-size: 1.1em;
+  position: absolute;
+  top: 70%;
+  left: 12%;
+  right: 10%;
 }
 
 /* ----------------------------
@@ -545,42 +575,56 @@ slide p {
 }
 
 .artwork-container {
-  display: flex;
+  /*display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-
-  /*background-color: #333;
+  border: solid red;*/
+  position: relative;
+  width: 90%;
+  height: 280px;
+  background-color: #333;
   border-radius: 5px;
-  box-shadow: 0 7px 7px rgba(0,0,0, .9);*/
+  box-shadow: 0 7px 7px rgba(0,0,0, .9);
 }
  .artwork-container img {
+   position: absolute;
+   top: 0;
+   left: 0;
    width: 40%;
    padding-left: 1.5em;
    flex-grow: 1;
  }
  .artwork-container h2 {
-   font-size: 3.5em;
+   position: absolute;
+   top: 0;
+   left: 45%;
+   color: #fff;
+   font-size: 2.5em;
    width: 40%;
    padding-left: .1em;
   }
 
   .artwork-container h3 {
+    position: absolute;
+    top: 35%;
+    left: 45%;
+    color: #fff;
     font-size: 1.8em;
     padding-left: .1em;
     width: 40%;
   }
 
   .artwork-container img,
-  .release-name, h4 {
+  .release-name {
     margin: .6em .1em;
   }
 
-  .artwork-container h4 {
-    font-size: 1.1em;
+  .container-primary h4 {
     text-align: justify;
-    margin-left: 2em;
-    margin-right: 2em;
+    margin: 2em 2.5em .3em;
+    /*margin-left: 2em;
+    margin-right: 2em;*/
   }
 
   slider {
@@ -676,11 +720,24 @@ slide p {
    }
 
   .artwork-container {
-     width: 60%;
+     width: 85%;
+     height: 380px;
+   }
+
+   .release-name h2 {
+     font-size: 3.5em;
+   }
+
+   .release-name h3 {
+     font-size: 3em;
    }
 
    .text-wrapper {
      width: 100%;
+   }
+
+   .container-primary h4 {
+     font-size: 1.5em;
    }
 
 
