@@ -386,7 +386,7 @@ slide:nth-child(4) {
   font-size: 2.5em;
   font-style: normal;
   font-weight: 500;
-  bottom: 62%;
+  bottom: 38%;
   left: 12%;
   margin-right: 10%;
   text-align: left;
@@ -400,7 +400,7 @@ font-style: normal;
 font-weight: 300;
 font-size: 2.4em;
 position: absolute;
-bottom: 50%;
+bottom: 25%;
 left: 12%;
 margin-right: 10%;
 text-align: left;
@@ -414,13 +414,14 @@ text-align: left;
   font-weight: 200;
   font-size: 1.2em;
   position: absolute;
-  bottom: 40%;
+  bottom: 13%;
   left: 12%;
   margin-right: 10%;
   text-align: left;
 }
 
 .overlay-slide p {
+  display: none;
   font-family: 'Roboto', sans-serif;
   text-align: left;
   line-height: 1;
