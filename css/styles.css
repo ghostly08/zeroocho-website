@@ -30,6 +30,10 @@
   color: rgba(200, 250, 0, 1);
 }
 
+h1 {
+
+}
+
 h2 {
   font-family: 'Roboto', sans-serif;
   text-align: center;
@@ -311,21 +315,21 @@ slider > * {
 slide:nth-child(1) {
   left: 0%;
   animation-delay: -1s;
-  background-image: url('../images/inner-laut.jpg');
+  background-image: url('../images/whypeopledance.png');
   background-size: cover;
   background-position: center;
 }
 
 slide:nth-child(2) {
   animation-delay: 2s;
-  background-image: url('../images/timothy-clerkin-artist.jpg');
+  background-image: url('../images/tim-premiere.png');
   background-size: cover;
   background-position: center;
 }
 
 slide:nth-child(3) {
   animation-delay: 5s;
-  background-image: url('../images/ghostly-sonar.jpg');
+  background-image: url('../images/4100hz.png');
   background-size: cover;
   background-position: center;
 }
@@ -368,20 +372,35 @@ slide:nth-child(4) {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: rgba(50, 50, 50, .7);
+  background: rgba(50, 50, 50, .5);
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
 
+.overlay-slide h1 {
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  color: rgba(200, 250, 0, 1);
+  background: rgba(50, 50, 50, .7);
+  font-size: 2.5em;
+  font-style: normal;
+  font-weight: 500;
+  bottom: 62%;
+  left: 12%;
+  margin-right: 10%;
+  text-align: left;
+}
+
 .overlay-slide h2 {
 font-family: 'Montserrat', sans-serif;
 color: #fff;
-font-style: italic;
-font-weight: 400;
-font-size: 1.9em;
+background: rgba(50, 50, 50, .7);
+font-style: normal;
+font-weight: 300;
+font-size: 2.4em;
 position: absolute;
-top: 45%;
+bottom: 50%;
 left: 12%;
 margin-right: 10%;
 text-align: left;
@@ -389,12 +408,13 @@ text-align: left;
 
 .overlay-slide h3 {
   font-family: 'Montserrat', sans-serif;
-  color: yellow;
+  background: rgba(50, 50, 50, .7);
+  color: #fff;
   font-style: italic;
-  font-weight: 100;
+  font-weight: 200;
   font-size: 1.2em;
   position: absolute;
-  top: 62%;
+  bottom: 40%;
   left: 12%;
   margin-right: 10%;
   text-align: left;
@@ -404,12 +424,14 @@ text-align: left;
   font-family: 'Roboto', sans-serif;
   text-align: left;
   line-height: 1;
-  color: #fff;
+  color: #ffff;
+  background: rgba(50, 50, 50, .7);
   font-size: 1.1em;
   position: absolute;
-  top: 70%;
+  bottom: 20%;
   left: 12%;
   right: 10%;
+  padding: .3em;
 }
 
 /* ----------------------------
@@ -467,10 +489,10 @@ text-align: left;
   font-family: 'Montserrat', sans-serif;
   color: #fff;
   font-style: italic;
-  font-weight: 400;
-  font-size: 1.9em;
+  font-weight: 100;
+  font-size: 1.6em;
   position: absolute;
-  top: 45%;
+  top: 10%;
   left: 12%;
   margin-right: 10%;
   text-align: left;
@@ -483,7 +505,7 @@ text-align: left;
   font-weight: 100;
   font-size: 1.2em;
   position: absolute;
-  top: 62%;
+  bottom: 20%;
   left: 12%;
   margin-right: 10%;
   text-align: left;
@@ -496,7 +518,7 @@ text-align: left;
   color: #fff;
   font-size: 1.1em;
   position: absolute;
-  top: 70%;
+  bottom: 10%;
   left: 12%;
   right: 10%;
 }
