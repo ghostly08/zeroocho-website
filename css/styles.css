@@ -285,7 +285,7 @@ text-align: center; /*para alinear el elemento "a"*/
 
 .premieres-container {
   display: block;
-  padding-bottom: 25em;
+  padding-bottom: 15em;
   border-radius: 5px;
 }
 
@@ -294,9 +294,9 @@ text-align: center; /*para alinear el elemento "a"*/
 slider {
   display: flex;
   /*order: -2;*/
-  width: 100%;
-  height: 50%;
-  background-color: #1f1f1f;
+  width: 40%;
+  height: 40%;
+  /*background-color: #1f1f1f;*/
   margin-top: 1em;
   overflow: hidden;
   position: absolute;
@@ -305,8 +305,8 @@ slider {
 slider > * {
   position: absolute;
   display: flex;
-  width: 100%;
-  height: 100%;
+  width: 40%;
+  height: 40%;
   background: #1f1f1f;
   animation: slide 12s infinite;
   overflow: hidden;
@@ -383,10 +383,10 @@ slide:nth-child(4) {
   font-family: 'Montserrat', sans-serif;
   color: rgba(200, 250, 0, 1);
   background: rgba(50, 50, 50, .7);
-  font-size: 2.5em;
+  font-size: 2.3em;
   font-style: normal;
   font-weight: 500;
-  bottom: 38%;
+  bottom: 53%;
   left: 12%;
   margin-right: 10%;
   text-align: left;
@@ -398,9 +398,9 @@ color: #fff;
 background: rgba(50, 50, 50, .7);
 font-style: normal;
 font-weight: 300;
-font-size: 2.4em;
+font-size: 2.1em;
 position: absolute;
-bottom: 25%;
+bottom: 30%;
 left: 12%;
 margin-right: 10%;
 text-align: left;
@@ -414,7 +414,7 @@ text-align: left;
   font-weight: 200;
   font-size: 1.2em;
   position: absolute;
-  bottom: 13%;
+  bottom: 8%;
   left: 12%;
   margin-right: 10%;
   text-align: left;
