@@ -285,7 +285,7 @@ text-align: center; /*para alinear el elemento "a"*/
 
 .premieres-container {
   display: block;
-  padding-bottom: 15em;
+  padding-bottom: 25em;
   border-radius: 5px;
 }
 
@@ -294,8 +294,8 @@ text-align: center; /*para alinear el elemento "a"*/
 slider {
   display: flex;
   /*order: -2;*/
-  width: 40%;
-  height: 40%;
+  width: 100%;
+  height: 50%;
   /*background-color: #1f1f1f;*/
   margin-top: 1em;
   overflow: hidden;
@@ -305,8 +305,8 @@ slider {
 slider > * {
   position: absolute;
   display: flex;
-  width: 40%;
-  height: 40%;
+  width: 100%;
+  height: 100%;
   background: #1f1f1f;
   animation: slide 12s infinite;
   overflow: hidden;
@@ -386,7 +386,7 @@ slide:nth-child(4) {
   font-size: 2.3em;
   font-style: normal;
   font-weight: 500;
-  bottom: 53%;
+  bottom: 40%;
   left: 12%;
   margin-right: 10%;
   text-align: left;
@@ -414,7 +414,7 @@ text-align: left;
   font-weight: 200;
   font-size: 1.2em;
   position: absolute;
-  bottom: 8%;
+  bottom: 20%;
   left: 12%;
   margin-right: 10%;
   text-align: left;
@@ -588,7 +588,21 @@ text-align: left;
  }
 
  slider {
-   height: 60%;
+   width: 100%;
+   height: 50%;
+ }
+
+ slider > * {
+   width: 100%;
+   height: 80%;
+ }
+
+ .overlay-slide h1 {
+   bottom: 44%;
+ }
+
+ .overlay-slide h3 {
+   bottom: 18%;
  }
 
 .release-name h4,
@@ -726,7 +740,15 @@ text-align: left;
 
   slider {
     width: 60%;
-    height: 60%;
+    height: 40%;
+  }
+
+  .overlay-slide h1 {
+    bottom: 48%;
+  }
+
+  .overlay-slide h3 {
+    bottom: 14%;
   }
 
   .container-primary,
