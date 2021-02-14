@@ -112,12 +112,6 @@ margin-top: 0px;
 padding-bottom: 670px;
 }
 
-/*.about {
-  position: absolute;
-  top: 300px;
-  color: #ffff;
-}*/
-
 /* -------------------------------
        Redes Container
 -------------------------------- */
@@ -727,17 +721,24 @@ text-align: left;
   }
 
   .about {
+    /*position: absolute;*/
     width: 75%;
+    /*top: 380px;
+    left: 10%;
+    padding: 8px;*/
     margin-left: auto;
     margin-right: auto;
+    /*background-color: rgba(30, 30, 30, 0.7);*/
   }
 
   .about p {
-    text-align: left;
-    margin-top: 2.5em;
-    margin-bottom: 3em;
-    font-size: 1em;
-    font-weight: 400;
+    color: #333;
+    text-align: center;
+    line-height: 2;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    font-size: 1.1em;
+    font-weight: 300;
   }
 
   .premieres-container {
