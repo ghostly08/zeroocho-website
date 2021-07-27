@@ -106,10 +106,10 @@ a:active {
 }
 
 .imagenes-portadaweb {
-background: url('../images/dark-web-cover.png') no-repeat center;
-background-size: cover; /*Adapta la imagen al tamaño del monitor*/
+background: url('../images/triangle.png') no-repeat center;
+background-size: 100%; /*Adapta la imagen al tamaño del monitor*/
 margin-top: 0px;
-padding-bottom: 670px;
+padding-bottom: 370px;
 }
 
 /* -------------------------------
