@@ -100,24 +100,6 @@ a:active {
 /* Main Styles --------------------- */
 
 
-
-.main-header {
-  width: 100%;
-  height: 0;
-  position: absolute;
-  padding-top: 130px;
-  padding-bottom: 30px;/*Al bajar el p. bottom he conseguido subir los icons de social*/
-  background: url('../images/logo-z81.png') no-repeat left / 16%;
-  background-position: 10%;
-}
-
-/*.imagenes-portadaweb {
-background: url('../images/triangle.png') no-repeat center;
-background-size: 100%; /*Adapta la imagen al tamaño del monitor*/
-/*margin-top: 0px;
-padding-bottom: 370px;
-}*/
-
 /* -------------------------------
        Redes Container
 -------------------------------- */
@@ -166,6 +148,10 @@ text-align: center; /*para alinear el elemento "a"*/
 
 .about {
   margin: 2em 2.5em;
+}
+
+.about p {
+  font-size: 28px;
 }
 
 .hightlights-titol {
@@ -483,12 +469,12 @@ text-align: center; /*para alinear el elemento "a"*/
 
   .about p {
     color: #333;
-    text-align: center;
+    text-align: left;
     line-height: 2;
     margin-top: .5em;
     margin-bottom: .5em;
-    font-size: 1.1em;
-    font-weight: 300;
+    font-size: 1.7em;
+    font-weight: 200;
   }
 
   .banner {
