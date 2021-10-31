@@ -1,3 +1,7 @@
+@import url("components/header.css");
+@import url("components/sidebar.css");
+@import url("components/banner.css");
+
 /* Type Selectors -------------------- */
 
 * {
@@ -95,6 +99,8 @@ a:active {
 
 /* Main Styles --------------------- */
 
+
+
 .main-header {
   width: 100%;
   height: 0;
@@ -105,12 +111,12 @@ a:active {
   background-position: 10%;
 }
 
-.imagenes-portadaweb {
+/*.imagenes-portadaweb {
 background: url('../images/triangle.png') no-repeat center;
 background-size: 100%; /*Adapta la imagen al tamaño del monitor*/
-margin-top: 0px;
+/*margin-top: 0px;
 padding-bottom: 370px;
-}
+}*/
 
 /* -------------------------------
        Redes Container
@@ -153,82 +159,6 @@ text-align: center; /*para alinear el elemento "a"*/
   /*background-color: rgba(200, 250, 0, 1);*/
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .4);
 }
-
-/* ---------------------------
-         Sidebar
----------------------------- */
-
-.btn {/*parametros boton menu*/
-  position: fixed;
-  top: 12px; /*baja el botón de menu*/
-  left: 25px; /*lo cerca que está del margén left*/
-  height: 33px;/*altura del controno del botón*/
-  padding: 4px 5px 0 5px;*//*parametro de contorno del boton*/
-  border-radius: 3px; /*redondear esquinas del botón*/
-  cursor: pointer;
-  transition: left 0.4s ease;
-}
-
-.btn.click {/*desplazamiento del bottom de sidebar*/
-  left: 395px;
-  z-index: 1;
-}
-
-.btn span {/*parametros del boton barras del menú*/
-  color: #777;
-  font-size: 24px;
-}
-
-.btn.click span:before; {/*desplegar menu*/
-  content: '\f00d';
-}
-
-.sidebar {
-  position: fixed;
-  top: 0px;/*para bajar el contenedor menu*/
-  padding-top: 100px;
-  width: 390px;
-  height: 100%;
-  left: -450px;
-  background: #fff;
-  transition: left 0.4s ease;
-  z-index: 1;
-  }
-
-  .sidebar.show{
-    left: 0px;
- }
-
-  nav ul {
-  background: #fff;
-  height: 100%;
-  width: 100%;
-  list-style: none; /*da formato de lista*/
-  }
-
-  nav ul li {
-  text-align: center;
-  line-height: 80px;
-  /*margin-left: 20px;
-  margin-bottom: 10px;*/
-  list-style: none;
-  }
-
-  nav ul li a {/*actuando sobre todos los navegadores, ojo!!!*/
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  color: #fff;
-  background-color: #444;
-  font-size: 2.5em;/*tamaño letras menu*/
-  letter-spacing: 1.5px;
-  padding: 0 5px;
-  bottom: 35px;
-  }
-
-  .sidebar a:hover {
-    color: rgba(200, 250, 0, 1);
-  }
 
  /*--------------------------
            Layouts
@@ -277,162 +207,6 @@ text-align: center; /*para alinear el elemento "a"*/
   font-size: 4em;
   margin-top: 50px;
   text-shadow: 0 3px 4px rgba(0,0,0, .1);
-}
-
-/* -------------------------
-    Premieres Layouts
---------------------------- */
-
-.premieres-container {
-  display: block;
-  padding-bottom: 25em;
-  border-radius: 5px;
-}
-
-/* ----- Slider ----- */
-
-slider {
-  display: flex;
-  /*order: -2;*/
-  width: 100%;
-  height: 50%;
-  /*background-color: #1f1f1f;*/
-  margin-top: 1em;
-  overflow: hidden;
-  position: absolute;
-}
-
-slider > * {
-  position: absolute;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  background: #1f1f1f;
-  animation: slide 12s infinite;
-  overflow: hidden;
-}
-
-slide:nth-child(1) {
-  left: 0%;
-  animation-delay: -1s;
-  background-image: url('../images/whypeopledance.png');
-  background-size: cover;
-  background-position: center;
-}
-
-slide:nth-child(2) {
-  animation-delay: 2s;
-  background-image: url('../images/tim-premiere.png');
-  background-size: cover;
-  background-position: center;
-}
-
-slide:nth-child(3) {
-  animation-delay: 5s;
-  background-image: url('../images/4100hz.png');
-  background-size: cover;
-  background-position: center;
-}
-
-slide:nth-child(4) {
-  animation-delay: 8s;
-  background-image: url('../images/captcha.jpg');
-  background-size: cover;
-  background-position: center;
-}
-
-/*slide:nth-child(5) {
-  left: 0%;
-  animation-delay: 11s;
-  background-image: url('../images/inner-laut.jpg');
-  background-size: cover;
-  background-position: center;
-}*/
-
-/*slide p {
-  font-family: sans-serif;
-  font-size: 70px;
-  text-align: center;
-  display: none;
-  width: 100%;
-  margin-top: 340px;
-  color: #fff;
-}*/
-
-@keyframes slide {
-  0% { left: 100%; width: 100%;}
-  5% { left: 0%;}
-  25% { left: 0%;}
-  30% { left: -100%; width: 100%;}
-  30.0001% { left: -100%; width: 0%;}
-  100% { left: 100%; width: 0%;}
-}
-
-.overlay-slide {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background: rgba(50, 50, 50, .5);
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.overlay-slide h1 {
-  position: absolute;
-  font-family: 'Montserrat', sans-serif;
-  color: rgba(200, 250, 0, 1);
-  background: rgba(50, 50, 50, .7);
-  font-size: 2.3em;
-  font-style: normal;
-  font-weight: 500;
-  bottom: 40%;
-  left: 12%;
-  margin-right: 10%;
-  text-align: left;
-}
-
-.overlay-slide h2 {
-font-family: 'Montserrat', sans-serif;
-color: #fff;
-background: rgba(50, 50, 50, .7);
-font-style: normal;
-font-weight: 300;
-font-size: 2.1em;
-position: absolute;
-bottom: 30%;
-left: 12%;
-margin-right: 10%;
-text-align: left;
-}
-
-.overlay-slide h3 {
-  font-family: 'Montserrat', sans-serif;
-  background: rgba(50, 50, 50, .7);
-  color: #fff;
-  font-style: italic;
-  font-weight: 200;
-  font-size: 1.2em;
-  position: absolute;
-  bottom: 20%;
-  left: 12%;
-  margin-right: 10%;
-  text-align: left;
-}
-
-.overlay-slide p {
-  display: none;
-  font-family: 'Roboto', sans-serif;
-  text-align: left;
-  line-height: 1;
-  color: #ffff;
-  background: rgba(50, 50, 50, .7);
-  font-size: 1.1em;
-  position: absolute;
-  bottom: 20%;
-  left: 12%;
-  right: 10%;
-  padding: .3em;
 }
 
 /* ----------------------------
@@ -579,7 +353,6 @@ text-align: left;
  }
 
 .about,
-.premieres-container,
 .container-primary,
 .container-secondary {
    width: 85%;
@@ -587,23 +360,6 @@ text-align: left;
    margin-right: auto;
  }
 
- slider {
-   width: 100%;
-   height: 50%;
- }
-
- slider > * {
-   width: 100%;
-   height: 80%;
- }
-
- .overlay-slide h1 {
-   bottom: 44%;
- }
-
- .overlay-slide h3 {
-   bottom: 18%;
- }
 
 .release-name h4,
  .text-wrapper,
@@ -663,12 +419,6 @@ text-align: left;
     margin: 2em 2.5em .3em;
     /*margin-left: 2em;
     margin-right: 2em;*/
-  }
-
-  slider {
-    width: 83%;
-    margin-left: auto;
-    margin-right: auto;
   }
 
 
@@ -741,13 +491,8 @@ text-align: left;
     font-weight: 300;
   }
 
-  .premieres-container {
-    width: 60%;
-  }
-
-  slider {
-    width: 60%;
-    height: 40%;
+  .banner {
+    width: 100%;
   }
 
   .overlay-slide h1 {
@@ -792,31 +537,6 @@ text-align: left;
    .container-primary h4 {
      font-size: 1.5em;
    }
-
-
-
-   /*.release-name h2, h3, h4 {
-     color: #fff;
-   }*/
-
-   /*.artwork-container img,
-   h2, h3 {
-     padding: 1em;
-     background-color: #333;
-   }*/
-
-   /*.text-wrapper {
-     width: 60%;
-     text-align: left;
-   }*/
-
-   /*.premieres-container {
-     width: 85%;
-     height: 80px;
-     margin-top: 0;
-
-     /*border-bottom: dashed #555 3px;*/
-  /* }*/
 
    .premieres-items {
 

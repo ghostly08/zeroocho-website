@@ -1,0 +1,72 @@
+
+.btn {/*parametros boton menu*/
+  position: fixed;
+  top: 12px; /*baja el botón de menu*/
+  left: 25px; /*lo cerca que está del margén left*/
+  height: 33px;/*altura del controno del botón*/
+  padding: 4px 5px 0 5px;*//*parametro de contorno del boton*/
+  border-radius: 3px; /*redondear esquinas del botón*/
+  cursor: pointer;
+  transition: left 0.4s ease;
+}
+
+.btn.click {/*desplazamiento del bottom de sidebar*/
+  left: 395px;
+  z-index: 1;
+}
+
+.btn span {/*parametros del boton barras del menú*/
+  color: #777;
+  font-size: 24px;
+}
+
+.btn.click span:before; {/*desplegar menu*/
+  content: '\f00d';
+}
+
+.sidebar {
+  position: fixed;
+  top: 0px;/*para bajar el contenedor menu*/
+  padding-top: 100px;
+  width: 390px;
+  height: 100%;
+  left: -450px;
+  background: #fff;
+  transition: left 0.4s ease;
+  z-index: 1;
+  }
+
+  .sidebar.show{
+    left: 0px;
+ }
+
+  .sidebar ul {
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  list-style: none; /*da formato de lista*/
+  }
+
+  .sidebar ul li {
+  text-align: center;
+  line-height: 80px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  list-style: none;
+  }
+
+  .sidebar ul li a {/*actuando sobre todos los navegadores, ojo!!!*/
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: #fff;
+  background-color: #444;
+  font-size: 2.5em;/*tamaño letras menu*/
+  letter-spacing: 1.5px;
+  padding: 0 5px;
+  bottom: 35px;
+  }
+
+  .sidebar a:hover {
+    color: rgba(200, 250, 0, 1);
+  }
