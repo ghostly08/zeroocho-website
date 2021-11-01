@@ -27,14 +27,14 @@ article:hover {
 @media (min-width: 1025px) {
 
   .cards-container {
-    width: 90%;
+    width: 75%;
     align-items: center;
     margin: auto;
   }
 
    article {
-     justify-content: space-around;
-     width: 29%;
+     justify-content: center;
+     width: 32%;
    }
 
    /*.card-xl {
