@@ -1,0 +1,43 @@
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+article {
+  display: inline-block;
+  width: 95%;
+  text-align: center;
+  background-color: #ffff;
+  border: solid #e3e3e3 1px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 3px #e1e1e1;
+  margin: 0 auto 20px auto;
+}
+
+article img {
+  width: 100%;
+  padding-top: 25px;
+}
+
+article:hover {
+  background-color: #e5e5e5;
+  box-shadow: 3px 3px 3px #e3e3e3;
+}
+
+@media (min-width: 1025px) {
+
+  .cards-container {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+  }
+
+   article {
+     justify-content: space-around;
+     width: 29%;
+   }
+
+   /*.card-xl {
+     width: 50%;
+   }*/
+  }
