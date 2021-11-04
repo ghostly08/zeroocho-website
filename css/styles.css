@@ -87,7 +87,6 @@ p {
 /* Pseudo-classes ------------------ */
 
 a:link {
-  /*color: rgb(255, 169, 73);*/
   text-decoration: none;
 }
 
@@ -160,7 +159,7 @@ text-align: center; /*para alinear el elemento "a"*/
   font-size: 28px;
 }
 
-.hightlights-titol {
+/*.hightlights-titol {
   font-family: "Roboto", sans-serif;
   color: #fff;
   text-align: center;
@@ -170,8 +169,8 @@ text-align: center; /*para alinear el elemento "a"*/
   margin-top: 2.5em;
   margin-left: 40px;
   /*margin-right: auto;*/
-  margin-bottom: 0;
-  border-top-right-radius: 5px;
+  /*margin-bottom: 0;
+  border-top-right-radius: 5px;*/
 }
 
 .line-about {
