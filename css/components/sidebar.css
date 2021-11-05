@@ -11,7 +11,7 @@
 }
 
 .btn.click {/*desplazamiento del bottom de sidebar*/
-  left: 395px;
+  left: 350px; /*395px*/
   z-index: 1;
 }
 
