@@ -149,3 +149,15 @@ text-align: left;
   right: 10%;
   padding: .3em;
 }
+
+@media (min-width: 1024px) {
+
+  .overlay-slide h1 {
+    font-size: 1.2em;
+  }
+
+  .overlay-slide h2 {
+    font-size: 1em;
+  }
+
+}
