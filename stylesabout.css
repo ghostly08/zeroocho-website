@@ -161,6 +161,7 @@ text-align: center; /*para alinear el elemento "a"*/
   padding: 4px 5px 0 5px;*//*parametro de contorno del boton*/
   cursor: pointer;
   transition: left 0.4s ease;
+  z-index: 2;
 }
 
 .btn.click {/*desplazamiento del bottom de sidebar*/
