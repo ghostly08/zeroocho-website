@@ -27,7 +27,7 @@ nav ul li a {
 }
 
 @media (min-width: 1024px) {
-  nav ul {
+  header nav ul {
     visibility: visible;
   }
 }
