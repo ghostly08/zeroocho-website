@@ -28,7 +28,7 @@
   position: fixed;
   top: 0px;/*para bajar el contenedor menu*/
   padding-top: 100px;
-  width: 390px;
+  width: 280px;
   height: 100%;
   left: -450px;
   background: #fff;
@@ -49,24 +49,25 @@
 
   .sidebar ul li {
   text-align: center;
-  line-height: 80px;
+  line-height: 50px;
   margin-left: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   list-style: none;
   }
 
   .sidebar ul li a {/*actuando sobre todos los navegadores, ojo!!!*/
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
   font-weight: 600;
   color: #fff;
-  background-color: #444;
-  font-size: 2.5em;/*tamaño letras menu*/
+  background-color: #333;
+  font-size: 25px;/*tamaño letras menu*/
+  text-decoration: none;
   letter-spacing: 1.5px;
-  padding: 0 5px;
-  bottom: 35px;
+  padding: 0 10px 0 5px;
+  bottom: 15px;
   }
 
   .sidebar a:hover {
-    color: rgba(200, 250, 0, 1);
+    color: rgba(255, 239, 3, .9);
   }

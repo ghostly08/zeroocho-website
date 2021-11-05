@@ -180,11 +180,12 @@ text-align: center; /*para alinear el elemento "a"*/
   position: fixed;
   top: 0px;/*para bajar el contenedor menu*/
   padding-top: 100px;
-  width: 200px;
+  width: 300px;
   height: 100%;
-  left: -250px;
+  left: -450px;
   background: #fff;
   transition: left 0.4s ease;
+  z-index: 1;
   }
 
   .sidebar.show{
@@ -198,7 +199,7 @@ text-align: center; /*para alinear el elemento "a"*/
   }
 
   nav ul li {
-  line-height: 40px;
+  line-height: 50px;
   margin-left: 20px;
   margin-bottom: 10px;
   list-style: none;
@@ -210,10 +211,10 @@ text-align: center; /*para alinear el elemento "a"*/
   font-weight: 600;
   color: #fff;
   background: #333;
-  font-size: 25px;/*tamaño letras menu*/
+  font-size: 30px;/*tamaño letras menu*/
   text-decoration: none;
   letter-spacing: 1.5px;
-  padding: 0 5px;
+  padding: 0 10px 0 5px;
   bottom: 35px;
   }
 
