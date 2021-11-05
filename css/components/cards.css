@@ -36,6 +36,20 @@ article:hover {
   box-shadow: 3px 3px 3px #e3e3e3;
 }
 
+/* ======== Media Queries ======== */
+
+@media (min-width: 768px) {
+
+  .cards-container {
+    align-items: center;
+  }
+
+  article {
+    width: 48%;
+  }
+
+}
+
 @media (min-width: 1025px) {
 
   .cards-container {
